@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/*CORES*********
+
+azul claro, a cor principal (logo + btns dowloads + Titulo Equipe) 
+>> #0066CC
+
+Azul escuro (Fonte Título h3) 
+>> #003366
+
+
+Cor dos textos em geral <p> 
+>> #333333
+
+Cor Marrom escuro quase preto da fonte rodapé:
+#222220
+
+*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  color: #333333;
+}
+
+/* Resets personalizados */
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+section.quem-fez {
+  background-image: url("../img/background-large.png");
+  background-size: cover;
+}
+
+section.quem-fez div.title-section {
+  width: 850px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+section.quem-fez div.title-section h2 {
+  margin: 0 0 0 30px;
+  color: #0066CC;
+}
+
+section.quem-fez div.title-section p {
+  margin: 0 0 0 30px;
+}
+
+section.quem-fez div.equipe {
+  box-shadow: -1px 2px 15px 2px rgba(0, 0, 0, 0.75);
+  width: 850px;
+  margin: 0 auto;
+}
+
+section.quem-fez div.equipe div.cards {
+  display: flex;
+  justify-content: center;
+}
+
+section.quem-fez div.equipe div.cards div {
+  width: 170px;
+  background-color: white;
+}
+
+section.quem-fez div.equipe div.cards div img {
+  width: 100%;
+}
+
+section.quem-fez div.equipe div.cards div p {
+  margin: 5px 0 60px 10px;
+}
+/*# sourceMappingURL=style.css.map */
