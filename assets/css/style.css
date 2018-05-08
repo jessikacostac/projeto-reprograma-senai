@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+footer {
+  width: 500px;
+  margin: 30px auto;
+  text-align: center;
+  background: white;
+}
+
+footer img {
+  width: 185px;
+}
+
+footer p {
+  margin: 0;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
