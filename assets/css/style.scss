@@ -3,6 +3,47 @@ body{
     font-family: 'Rajdhani', sans-serif;
 }
 
+nav{
+    margin: 0;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 20px;
+    box-shadow: 0px 10px 40px 0px rgba(0,0,0,0.3);
+    
+    img{
+        width: 200px;
+        margin: 50px 50px;
+        height: 100%; 
+    }
+
+    ul{
+        list-style: none;
+        margin-right: 50px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        li{
+        display: inline;
+        margin: 15px;
+        }
+    }
+
+    a{
+        background-color: #0066CC;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 500;
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+    }
+}
+
 footer{
     width: 500px;
     margin: 30px auto;
