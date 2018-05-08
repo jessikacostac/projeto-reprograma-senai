@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*CORES*********
 
 azul claro, a cor principal (logo + btns dowloads + Titulo Equipe) 
@@ -19,17 +18,62 @@ html {
   font-size: 16px;
 }
 
-body {
-  font-family: 'Rajdhani', sans-serif;
-  color: #333333;
-}
-
 /* Resets personalizados */
 p {
   margin: 0;
   padding: 0;
   font-weight: bold;
 }
+
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+  color: #333333;
+}
+
+nav {
+  margin: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.3);
+}
+
+nav img {
+  width: 200px;
+  margin: 50px 50px;
+  height: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin-right: 50px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 15px;
+}
+
+nav a {
+  background-color: #0066CC;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 500;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+
 
 section.quem-fez {
   background-image: url("../img/background-large.png");
@@ -64,7 +108,7 @@ section.quem-fez div.equipe div.cards {
 
 section.quem-fez div.equipe div.cards div {
   width: 170px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 section.quem-fez div.equipe div.cards div img {
@@ -73,5 +117,23 @@ section.quem-fez div.equipe div.cards div img {
 
 section.quem-fez div.equipe div.cards div p {
   margin: 5px 0 60px 10px;
+
+
+
+footer {
+  width: 500px;
+  margin: 30px auto;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+footer img {
+  width: 185px;
+}
+
+footer p {
+  margin: 0;
+  font-weight: bold;
+
 }
 /*# sourceMappingURL=style.css.map */
