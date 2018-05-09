@@ -1,66 +1,105 @@
 body{
     margin: 0;
     font-family: 'Rajdhani', sans-serif;
+    color: #333333;
 }
 
 nav{
+    width: 100%;
     margin: 0;
-    background: white;
+    padding: 40px 0;
+    background: #ffffff;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     box-shadow: 0px 10px 40px 0px rgba(0,0,0,0.3);
+    transition: 1s all ease;
     
-    img{
-        width: 200px;
-        margin: 50px 50px;
-        height: 100%; 
+    img.logo-nav{
+        max-width: 20%;
     }
 
     ul{
         list-style: none;
+        margin: 0;
         margin-right: 50px;
         padding: 0;
         display: flex;
         align-items: center;
 
         li{
-        display: inline;
-        margin: 15px;
+            display: inline;
+            margin: 15px;
+            
+            a{
+                text-decoration: none;
+                color: #333333;
+            }
+            
+            a.download{
+                background-color: #0066CC;
+                color: #ffffff;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                font-weight: 500;
+                box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+            }
         }
     }
 
-    a{
-        background-color: #0066CC;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 24px;
-        font-weight: 500;
-        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
-    }
+    img.menu{
+        display: none;
+    } 
 }
 
+
+    @media  (max-width: 768px){
+        nav{
+            padding: 20px 0;
+
+            img.logo-nav{
+                max-width: 30%;
+            }
+            
+            ul {
+                display: none;
+            }
+            
+            img.menu{
+                display: block;
+                max-width: 25px;
+            }
+        }
+
+    }
+
+
 footer{
-    width: 500px;
+    width: 100%;
     margin: 30px auto;
     text-align: center;
-    background: white;
+    background: #ffffff;
     
-
-    img{
-        width: 185px;
+    .logo-footer{
+        max-width: 130px;
+        margin: 50px 0 0 0;
     }
 
     p{
         margin: 0;
         font-weight: bold;
+        font-size: 12px;
+    }
+
+    @media  (max-width: 768px){
+        .logo-footer{
+            max-width: 30%;
+        }
+
     }
 }
-
-
-
-
