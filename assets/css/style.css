@@ -32,23 +32,26 @@ body {
 }
 
 nav {
+  width: 100%;
   margin: 0;
-  background-color: #ffffff;
+  padding: 40px 0;
+  background: #ffffff;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.3);
+  transition: 1s all ease;
 }
 
-nav img {
-  width: 200px;
-  margin: 50px 50px;
-  height: 100%;
+nav img.logo-nav {
+  max-width: 20%;
 }
 
 nav ul {
   list-style: none;
+  margin: 0;
   margin-right: 50px;
   padding: 0;
   display: flex;
@@ -60,16 +63,42 @@ nav ul li {
   margin: 15px;
 }
 
-nav a {
+nav ul li a {
+  text-decoration: none;
+  color: #333333;
+}
+
+nav ul li a.download {
   background-color: #0066CC;
   color: #ffffff;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+nav img.menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 20px 0;
+  }
+  nav img.logo-nav {
+    max-width: 30%;
+  }
+  nav ul {
+    display: none;
+  }
+  nav img.menu {
+    display: block;
+    max-width: 25px;
+  }
 }
 
 div.o-que-e {
@@ -125,8 +154,6 @@ div.card p {
   padding: 5px 5px;
 }
 
-
-
 section.quem-fez {
   background-image: url("../img/background-large.png");
   background-size: cover;
@@ -173,20 +200,27 @@ section.quem-fez div.equipe div.cards div p {
 
 
 footer {
-  width: 500px;
+  width: 100%;
   margin: 30px auto;
   text-align: center;
-  background-color: #ffffff;
+  background: #ffffff;
 }
 
-footer img {
-  width: 185px;
+footer .logo-footer {
+  max-width: 130px;
+  margin: 50px 0 0 0;
 }
 
 footer p {
   margin: 0;
   font-weight: bold;
+  font-size: 12px;
+}
 
+@media (max-width: 768px) {
+  footer .logo-footer {
+    max-width: 30%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
 
