@@ -31,6 +31,11 @@ p {
     font-weight: bold;
 }
 
+h3 {
+    margin: 0;
+    color: #0066CC;
+}
+
 // /* Tornando as imagens responsivas */
 // img { max-width: 100%; }
 
@@ -89,126 +94,53 @@ nav{
 
 
 
-// Header /////////////////////////////////////////////////////////////////////////
+// Como Usar /////////////////////////////////////////////////////////////////////////
 
-// Section o que é  //////////////////////////////////////////////////////////////
-
-div.o-que-e{
-    position: relative;
-    max-width: 820px;
-    text-align: left;
-    margin: 0 auto;
-  
-    h2{
-    color: #003366;    
-    }
-
-    img.menu{
-        display: none;
-    } 
-}
-  
-  
-div.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    width: 850px;
-    margin: 30 auto;
-    padding: 5px 20px 5px 20px;
-
-
-        #cardstyle{
-            width: 283px;
-            height: 300px;
-            border: 1px solid #4a7093;
-            background-color: #f0f7f7;
-
-            a{
-                img{ 
-                    width:200px;
-                    margin: 15 10 0 45;
-
-                }
-            }        
-        }
-
-        p{
-            width: 180px;
-            font-size: 16px;
-            margin: 15 10 0 45;
-        }
-}
-  
-  
-.comobtn{
-    margin: 20 auto;
-    display: block;
-    background-color: #0066CC;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
-    width: 200px;
-    height: 25px;
-    padding: 5px 5px;
-}
-    
-
-// Setcion quem-fez ////////////////////////////////////////////////////////////////
-
-section.quem-fez {
+section.como-usar {
     background-image: url("../img/background-large.png");
     background-size: cover;
-    
-    div.title-section {
-        width: 60%;
+
+    div.passos {
+        width: 70%;
         margin: 0 auto;
-        padding: 40px 0;
-        font-size: 1.2em;
-        
-        h2 {
-            margin: 0 0 0 30px;
-            color: #0066CC;
-        }
+        background-color: #ffffff;
+        //text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 41px 30px;
 
-        p {
-            margin: 0 0 0 30px;
-        }
-    }
+        div.passo-a-passo {
+            width: 45%;
+            //display: inline-block;
+            //margin: 0 auto;
 
-    div.equipe {
-        box-shadow: -1px 2px 15px 2px rgba(0,0,0,0.75);
-        width: 60%;
-        margin: 0 auto;
-
-        text-align: center;        
-
-        div.cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            img {
+                width: 100%;
+                border: 1px solid;
+            }
+            h3 {
+                text-align: left;
+            }
             
-            div {
-                width: 20%;
-                background-color: white;
-                
-                img {
-                    width: 100%;
-                }
-
-                p {
-                    margin: 0 auto;
-                    padding: 5px 0 60px;
-                    
-                }
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                text-align: left;
             }
         }
+
+        hr.linha {
+            width: 95%;
+            border-color: #0066CC;
+            border-width: 1px;
+            margin: 30px 0;
+            
+        }
     }
+
 }
+
 
 // Media Queries------------------------------------------------------------------------------
 @media  (max-width: 768px){
@@ -298,6 +230,8 @@ section.quem-fez {
         }
     }
 }
+
+
 
 
 
