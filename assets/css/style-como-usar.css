@@ -31,57 +31,7 @@ p {
 }
 
 h3 {
-  margin: 0;
   color: #0066CC;
-}
-
-nav {
-  width: 100%;
-  margin: 0;
-  padding: 40px 0;
-  background: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-weight: 500;
-  font-size: 18px;
-  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.3);
-  transition: 1s all ease;
-}
-
-nav img.logo-nav {
-  max-width: 20%;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  margin-right: 50px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-
-nav ul li {
-  display: inline;
-  margin: 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333333;
-}
-
-nav ul li a.download {
-  background-color: #0066CC;
-  color: #ffffff;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 500;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
 section.como-usar {
@@ -89,36 +39,43 @@ section.como-usar {
   background-size: cover;
 }
 
-section.como-usar div.passos {
+section.como-usar div.fundo {
   width: 70%;
   margin: 0 auto;
   background-color: #ffffff;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  padding-bottom: 30px;
+}
+
+section.como-usar div.fundo h2 {
+  padding: 30px 30px 0;
+  margin: 0;
+  font-size: 30px;
+  color: #0066CC;
+}
+
+section.como-usar div.fundo div.passos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 41px 30px;
 }
 
-section.como-usar div.passos div.passo-a-passo {
+section.como-usar div.fundo div.passos div.passo-a-passo {
   width: 45%;
 }
 
-section.como-usar div.passos div.passo-a-passo img {
+section.como-usar div.fundo div.passos div.passo-a-passo img {
   width: 100%;
   border: 1px solid;
 }
 
-section.como-usar div.passos div.passo-a-passo h3 {
-  text-align: left;
-}
-
-section.como-usar div.passos div.passo-a-passo p {
+section.como-usar div.fundo div.passos div.passo-a-passo p {
   font-size: 14px;
   font-weight: 400;
   text-align: left;
 }
 
-section.como-usar div.passos hr.linha {
+section.como-usar div.fundo div.passos hr.linha {
   width: 95%;
   border-color: #0066CC;
   border-width: 1px;
@@ -126,19 +83,6 @@ section.como-usar div.passos hr.linha {
 }
 
 @media (max-width: 768px) {
-  nav {
-    padding: 20px 0;
-  }
-  nav img.logo-nav {
-    max-width: 30%;
-  }
-  nav ul {
-    display: none;
-  }
-  nav img.menu {
-    display: block;
-    max-width: 25px;
-  }
   section.quem-fez {
     font-size: 0.9em;
   }
@@ -176,23 +120,5 @@ section.como-usar div.passos hr.linha {
   section.quem-fez div.equipe div.cards div p {
     padding-bottom: 20px;
   }
-}
-
-footer {
-  width: 100%;
-  margin: 30px auto;
-  text-align: center;
-  background: #ffffff;
-}
-
-footer .logo-footer {
-  max-width: 130px;
-  margin: 50px 0 0 0;
-}
-
-footer p {
-  margin: 0;
-  font-weight: bold;
-  font-size: 12px;
 }
 /*# sourceMappingURL=style-como-usar.css.map */
